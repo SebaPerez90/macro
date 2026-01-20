@@ -1,6 +1,5 @@
 import Image from "next/image";
 
-// need a fake user interface
 interface FakeUserCardProps {
   imageIndex: number;
   title: string;
@@ -17,28 +16,27 @@ const FakeUserCard = ({
   figureCaption,
 }: FakeUserCardProps) => {
   return (
-    <div className="cursor-pointer flex items-center gap-10 w-120 p-6 bg-[#F9F9F9] shadow-md border-l-16 border-l-black/80 rounded-sm border border-black/5 hover:-translate-y-2   transition-all duration-200 hover:scale-102 hover:shadow-xl hover:shadow-black/10">
-      {/* user image and info */}
-      <div className="flex flex-col items-center justify-center">
-        <div className="overflow-hidden rounded-full size-30">
+    <div className="border-l-12 border-l-black/70 flex items-center gap-6 w-100 h-50 p-6 bg-[#F9F9F9] border border-black/5 rounded-sm shadow-md hover:-translate-y-2 transition-all duration-200 hover:scale-102 hover:shadow-xl hover:shadow-black/10 cursor-pointer">
+      <div className="flex flex-col items-center">
+        <div className="overflow-hidden rounded-full size-24">
           <Image
             src={`/images/avatar${imageIndex + 1}.webp`}
             alt={title}
-            width={150}
-            height={150}
+            width={96}
+            height={96}
             className="object-cover"
           />
         </div>
-        <h3 className="mt-2 text-base font-bold text-black">{name}</h3>
-        <p className="text-[12px] w-max font-medium text-slate-900">
+
+        <h3 className="mt-2 text-sm font-bold text-black">{name}</h3>
+        <p className="text-xs w-max font-medium text-slate-900">
           {figureCaption}
         </p>
       </div>
 
-      {/*  user testimonial */}
-      <div className="flex flex-col items-start gap-2 text-black">
-        <p className="text-base font-bold ">{title}</p>
-        <p className="text-[14px] italic font-medium">{description}</p>
+      <div className="flex flex-col gap-2 text-black">
+        <p className="text-sm font-bold leading-snug">{title}</p>
+        <p className="text-sm italic leading-snug">{description}</p>
       </div>
     </div>
   );
