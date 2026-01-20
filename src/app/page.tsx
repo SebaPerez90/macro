@@ -4,6 +4,7 @@ import DeliveryInfo from "../components/home/DeliveryInfo";
 // import FAQAccordion from "../components/home/FAQAccordion";
 import Footer from "../components/home/Footer";
 import Hero from "../components/home/Hero";
+import Testmonials from "../components/home/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         className="max-w-300 mx-auto flex flex-col gap-40"
       >
         <Hero />
+        <Testmonials />
         <Befenits />
         <DeliveryInfo />
         {/* <FAQAccordion /> */}
