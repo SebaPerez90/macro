@@ -15,7 +15,7 @@ const Testmonials = () => {
       id="services"
       className="flex flex-col items-center justify-center"
     >
-      <h2 className="text-3xl font-semibold tracking-tighter mb-10">
+      <h2 className="text-3xl font-semibold tracking-tighter">
         Por qué elegir MACRO
       </h2>
 
@@ -24,7 +24,7 @@ const Testmonials = () => {
           <Swiper
             modules={[Pagination, Autoplay]}
             autoplay={{
-              delay: 5000,
+              delay: 2000,
               pauseOnMouseEnter: true,
             }}
             spaceBetween={24}
@@ -40,7 +40,10 @@ const Testmonials = () => {
             className="h-[20em] custom-swiper"
           >
             {USER_TESTIMONIALS.map((user, index) => (
-              <SwiperSlide key={index} className="flex justify-center">
+              <SwiperSlide
+                key={index}
+                className="flex justify-center transition-all duration-300 pt-5 px-2"
+              >
                 <FakeUserCard
                   imageIndex={index}
                   name={user.name}
