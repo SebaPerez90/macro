@@ -17,7 +17,7 @@ const FakeUserCard = ({
   figureCaption,
 }: FakeUserCardProps) => {
   return (
-    <div className="flex items-center gap-10 w-120 p-6 bg-[#F9F9F9] shadow-lg border-l-16 border-l-black/80 rounded-sm border border-black/5">
+    <div className="cursor-pointer flex items-center gap-10 w-120 p-6 bg-[#F9F9F9] shadow-lg border-l-16 border-l-black/80 rounded-sm border border-black/5">
       {/* user image and info */}
       <div className="flex flex-col items-center justify-center">
         <div className="overflow-hidden rounded-full size-30">

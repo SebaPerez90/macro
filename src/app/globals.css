@@ -166,7 +166,8 @@ body {
   /* swipper bullets */
   .custom-swiper .swiper-pagination-bullet {
     background-color: #cbd5e1;
-    opacity: 1;
+    opacity: 0.8;
+    scale: 0.8;
   }
   .custom-swiper .swiper-pagination-bullet-active {
     background-color: #000000;
