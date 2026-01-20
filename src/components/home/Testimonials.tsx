@@ -15,9 +15,11 @@ const Testmonials = () => {
       id="services"
       className="flex flex-col items-center justify-center"
     >
-      <h2 className="text-4xl font-bold text-center mb-12">Mis servicios</h2>
+      <h2 className="text-3xl font-semibold tracking-tighter mb-10">
+        Por qué elegir MACRO
+      </h2>
 
-      <div className="w-[90%] max-w-250">
+      <div className="w-full test">
         <Swiper
           modules={[Pagination, Autoplay, EffectFade]}
           autoplay={{
@@ -31,10 +33,10 @@ const Testmonials = () => {
           }}
           pagination={{ clickable: true }}
           scrollbar={{ draggable: true }}
-          className="h-[20em]"
+          className="h-[20em] custom-swiper"
         >
           {USER_TESTIMONIALS.map((user, index) => (
-            <SwiperSlide key={index} className="py-5">
+            <SwiperSlide key={index} className="custom-swiper">
               <FakeUserCard
                 imageIndex={index}
                 name={user.name}

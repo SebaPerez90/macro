@@ -131,7 +131,6 @@
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-
     scroll-behavior: smooth;
 
     ::-webkit-scrollbar {
@@ -159,5 +158,18 @@
       -moz-appearance: textfield;
       appearance: auto;
     }
+  }
+}
+
+html,
+body {
+  /* swipper bullets */
+  .custom-swiper .swiper-pagination-bullet {
+    background-color: #cbd5e1;
+    opacity: 1;
+  }
+  .custom-swiper .swiper-pagination-bullet-active {
+    background-color: #000000;
+    scale: 1.4;
   }
 }
