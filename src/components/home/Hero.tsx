@@ -34,7 +34,7 @@ const Hero = () => {
         {HERO_BULLETS.map((item: string) => (
           <li
             key={item}
-            className="flex items-center gap-2 basis-full sm:basis-[48%] lg:basis-[25%] whitespace-nowrap "
+            className="flex items-center gap-2 basis-full sm:basis-[48%] lg:basis-[25%] whitespace-nowrap text-sm"
           >
             <FaCheck className="shrink-0 text-green-500" />
             <span>{item}</span>

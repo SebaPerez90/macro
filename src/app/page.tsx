@@ -1,7 +1,7 @@
 import Header from "../components/header/Index";
 import Befenits from "../components/home/Befenits";
 import DeliveryInfo from "../components/home/DeliveryInfo";
-import FAQAccordion from "../components/home/FAQAccordion";
+// import FAQAccordion from "../components/home/FAQAccordion";
 import Footer from "../components/home/Footer";
 import Hero from "../components/home/Hero";
 
@@ -16,7 +16,7 @@ export default function Home() {
         <Hero />
         <Befenits />
         <DeliveryInfo />
-        <FAQAccordion />
+        {/* <FAQAccordion /> */}
         <Footer />
       </main>
     </>

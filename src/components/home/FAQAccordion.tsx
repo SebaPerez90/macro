@@ -9,7 +9,7 @@ import { HERO_FAQ } from "@/src/constants/heroFAQ";
 const FAQAccordion = () => {
   return (
     <section id="faq" className="w-full max-w-7xl mx-auto">
-      <h2 className="text-4xl text-center mb-20 font-semibold tracking-tighter">
+      <h2 className="text-3xl text-center mb-20 font-semibold tracking-tighter">
         Preguntas Frecuentes
       </h2>
       <Accordion

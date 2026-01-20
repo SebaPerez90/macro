@@ -2,9 +2,9 @@ import Image from "next/image";
 
 const Header = () => {
   return (
-    <div className="w-full test flex items-center justify-between">
+    <div className="max-w-300 flex items-center justify-between p-5">
       <Image src="/svg/logo.svg" alt="logo" width={100} height={100} />
-      <span>links</span>
+      <span className="opacity-0">links</span>
     </div>
   );
 };
